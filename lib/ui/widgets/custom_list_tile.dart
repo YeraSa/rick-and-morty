@@ -63,7 +63,7 @@ class CustomListTile extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Species',
+                              'Species:',
                               style: Theme.of(context).textTheme.caption,
                             ),
                             const SizedBox(height: 2),
@@ -79,7 +79,7 @@ class CustomListTile extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Gender',
+                              'Gender:',
                               style: Theme.of(context).textTheme.caption,
                             ),
                             const SizedBox(height: 2),
