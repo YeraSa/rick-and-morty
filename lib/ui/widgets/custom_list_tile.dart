@@ -14,7 +14,7 @@ class CustomListTile extends StatelessWidget {
       borderRadius: BorderRadius.circular(15),
       child: Container(
         height: MediaQuery.of(context).size.height / 7,
-        color: const Color.fromRGBO(86, 86, 86, 0.8),
+        color: Theme.of(context).cardColor,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

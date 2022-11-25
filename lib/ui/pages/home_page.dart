@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black54,
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         centerTitle: true,
         title: Text(
           title,
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
       body: BlocProvider(
         create: (context) => CharacterBloc(characterRepo: repository),
         child: Container(
-          decoration: const BoxDecoration(color: Colors.black87),
+          decoration: BoxDecoration(color: Theme.of(context).backgroundColor),
           child: const SearchPage(),
         ),
       ),

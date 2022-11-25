@@ -50,21 +50,21 @@ class _SearchPageState extends State<SearchPage> {
           padding:
               const EdgeInsets.only(top: 15, bottom: 10, left: 16, right: 16),
           child: TextField(
-            style: const TextStyle(color: Colors.white),
-            cursorColor: Colors.white,
+            style: Theme.of(context).textTheme.bodyText2,
+            cursorColor: Theme.of(context).indicatorColor,
             decoration: InputDecoration(
               filled: true,
-              fillColor: const Color.fromRGBO(86, 86, 86, 0.8),
+              fillColor: Theme.of(context).cardColor,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
                 borderSide: BorderSide.none,
               ),
-              prefixIcon: const Icon(
+              prefixIcon: Icon(
                 Icons.search,
-                color: Colors.white,
+                color: Theme.of(context).indicatorColor,
               ),
               hintText: 'Search Name',
-              hintStyle: const TextStyle(color: Colors.white),
+              hintStyle: TextStyle(color: Theme.of(context).indicatorColor),
             ),
             onChanged: (value) {
               _currentPage = 1;

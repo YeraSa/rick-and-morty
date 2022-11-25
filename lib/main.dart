@@ -26,6 +26,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Colors.black,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black54,
+        ),
+        backgroundColor: Colors.black87,
+        cardColor: const Color.fromRGBO(86, 86, 86, 0.8),
+        indicatorColor: Colors.white,
         fontFamily: 'Georgia',
         textTheme: const TextTheme(
           headline1: TextStyle(
