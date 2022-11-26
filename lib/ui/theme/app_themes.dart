@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 enum AppTheme {
-  Light,
-  Dark,
+  LightTheme,
+  DarkTheme,
 }
 
 final appThemeData = {
-  AppTheme.Dark: ThemeData(
+  AppTheme.DarkTheme: ThemeData(
     brightness: Brightness.light,
     primaryColor: Colors.black,
     appBarTheme: const AppBarTheme(
@@ -30,7 +30,7 @@ final appThemeData = {
           fontSize: 11, fontWeight: FontWeight.w100, color: Colors.grey),
     ),
   ),
-  AppTheme.Light: ThemeData(
+  AppTheme.LightTheme: ThemeData(
     brightness: Brightness.light,
     primaryColor: Colors.white,
     appBarTheme: const AppBarTheme(
@@ -61,7 +61,7 @@ final appThemeData = {
       caption: TextStyle(
           fontSize: 11,
           fontWeight: FontWeight.w100,
-          color: Color.fromRGBO(72, 75, 106, 1)),
+          color: Colors.grey),
     ),
   ),
 };
