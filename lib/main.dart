@@ -4,8 +4,8 @@ import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:rick_and_morty/bloc/app_theme_bloc/theme_bloc.dart';
 import 'package:rick_and_morty/bloc_observable.dart';
+import 'package:rick_and_morty/ui/pages/splash_screen.dart';
 
-import 'ui/pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             title: 'Rick and Morty',
             theme: state.themeData,
-            home: HomePage(title: 'Rick and Morty'),
+            home: SplashScreen(title: 'Rick and Morty'),
           );
         },
       ),

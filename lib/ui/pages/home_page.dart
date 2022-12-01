@@ -31,7 +31,8 @@ class HomePage extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => PreferencesPage(title: title)));
+                      builder: (context) =>
+                          PreferencesPage(title: title)));
             },
           )),
       body: BlocProvider(
